@@ -9,6 +9,7 @@ default['dokku']['sshcommand']['filename'] = 'sshcommand'
 default['dokku']['sshcommand']['src_url'] = 'https://raw.github.com/progrium/sshcommand/5f9afe79698332d24a69873721619f5af4670d09/sshcommand'
 
 default['dokku']['docker']['use_aufs'] = true
+force_default['docker']['version'] = '0.9.1'
 
 # Nginx settings for dokku
 force_default['nginx']['default_site_enabled'] = false
