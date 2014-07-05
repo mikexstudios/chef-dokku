@@ -113,3 +113,8 @@ Dir.glob("#{dokku_src}/tests/apps/*").each do |orig_app_path|
     source_path app_path
   end
 end
+
+# TODO: Remove the need to manually call cleanup.
+dokku_dokku 'cleanup apps' do
+  action :cleanup
+end
